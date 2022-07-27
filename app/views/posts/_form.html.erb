@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <div class='text-area-with-counter'></div>
   </div>
 
   <div class="field">
@@ -30,3 +30,5 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+<%= javascript_pack_tag 'text_area_with_counter' %>
